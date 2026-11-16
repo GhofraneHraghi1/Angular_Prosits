@@ -1,0 +1,67 @@
+.notifications-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-left: 6px solid #f59e0b; /* Bordure jaune/orange */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.header .icon {
+  font-size: 24px;
+  background-color: #fef3c7; /* Fond jaune clair */
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.header h2 {
+  margin: 0;
+  color: #1e3a8a; /* Titre bleu foncé */
+  font-size: 1.4rem;
+  font-family: 'Georgia', serif;
+}
+
+.content p {
+  color: #333333;
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-family: 'Georgia', serif;
+}
+
+/* Bouton style contour gris */
+.btn-toggle {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.2s;
+  font-family: 'Georgia', serif;
+}
+
+.btn-toggle:hover {
+  background-color: #f1f5f9;
+}
+
+/* Style de la liste des notifications */
+.notif-list {
+  margin-top: 15px;
+  padding-left: 20px;
+  color: #333;
+  font-family: 'Georgia', serif;
+}
+
+.notif-list li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}

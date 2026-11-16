@@ -1,0 +1,24 @@
+<div class="friends-container">
+  <div class="header">
+    <span class="icon">👥</span>
+    <h2>Liste des amis</h2>
+  </div>
+
+  <!-- Avec un signal, on utilise [ngModel] et (ngModelChange) -->
+  <input 
+    type="text" 
+    [ngModel]="friendName()" 
+    (ngModelChange)="friendName.set($event)"
+    placeholder="Rechercher un ami..." 
+    class="search-input"
+  >
+
+  <!-- On boucle sur filteredFriends() et non friendList -->
+  <ul class="friends-list">
+    @for (item of filteredFriends(); track item.name) {
+      <li>{{ item.name }}</li>
+    } @empty {
+      <li>Aucun ami trouvé.</li>
+    }
+  </ul>
+</div>

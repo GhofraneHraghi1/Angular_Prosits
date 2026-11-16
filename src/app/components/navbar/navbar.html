@@ -1,0 +1,13 @@
+<nav class="navbar">
+  <ul>
+    @for (item of listItems; track item.name) {
+      <li>
+        <a [routerLink]="item.link" 
+           routerLinkActive="active" 
+           [routerLinkActiveOptions]="{exact: true}">
+          {{ item.name }}
+        </a>
+      </li>
+    }
+  </ul>
+</nav>

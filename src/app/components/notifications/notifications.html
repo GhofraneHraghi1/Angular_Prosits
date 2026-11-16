@@ -1,0 +1,24 @@
+<div class="notifications-container">
+  <div class="header">
+    <span class="icon">🔔</span>
+    <h2>Zone de notifications</h2>
+  </div>
+
+  <div class="content">
+    <p>Vous avez {{ notifications.length }} nouvelles notifications.</p>
+    
+    <!-- Le bouton qui déclenche l'événement (click) -->
+    <button class="btn-toggle" (click)="toggleDetails()">
+      {{ showDetails ? 'Masquer les notifications' : 'Afficher les notifications' }}
+    </button>
+
+    <!-- Affichage conditionnel avec @if -->
+    @if (showDetails) {
+      <ul class="notif-list">
+        @for (notif of notifications; track notif) {
+          <li>{{ notif }}</li>
+        }
+      </ul>
+    }
+  </div>
+</div>

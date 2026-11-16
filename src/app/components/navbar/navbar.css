@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Légère ombre pour séparer du fond */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333333; /* Texte gris foncé */
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Effet au survol (hover) */
+.navbar a:hover {
+  background-color: #e2e8f0;
+}
+
+/* Classe appliquée automatiquement par Angular quand on est sur la page */
+.navbar a.active {
+  background-color: #2563eb; /* Le bleu foncé de "Accueil" */
+  color: #ffffff;
+}
+
+/* 
+  Note : Sur ta capture, "Amis" a un fond bleu clair. 
+  Si tu veux forcer ce style pour un élément spécifique, 
+  tu peux ajouter une classe personnalisée dans ton tableau TypeScript.
+*/

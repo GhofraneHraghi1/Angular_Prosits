@@ -1,0 +1,36 @@
+.profil-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Légère ombre */
+  border-left: 6px solid #2563eb; /* La bordure bleue à gauche */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.header .icon {
+  font-size: 24px;
+  background-color: #dbeafe; /* Fond bleu clair pour l'icône */
+  padding: 10px;
+  border-radius: 50%; /* Rend le fond rond */
+}
+
+.header h2 {
+  margin: 0;
+  color: #1e3a8a; /* Titre en bleu foncé */
+  font-size: 1.4rem;
+  font-family: 'Georgia', serif; /* Police avec empattement comme sur l'image */
+}
+
+.profil-info p {
+  margin: 8px 0;
+  color: #333333;
+  font-size: 15px;
+  font-family: 'Georgia', serif;
+}
